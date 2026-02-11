@@ -251,7 +251,13 @@
 yesBtn.addEventListener("click", () => {
     zone.style.display = "none";
     hint.style.display = "none";
-    result.style.display = "block";
+    
+    // Change this line to show the section instead of rewriting it
+    result.style.display = "block"; 
+
+    resizeConfettiCanvas();
+    fullScreenConfetti();
+});
     
     // Play the music
     const music = document.getElementById("celebrationMusic");
@@ -310,6 +316,7 @@ yesBtn.addEventListener("click", () => {
   </script>
 </body>
 </html>
+
 
 
 
